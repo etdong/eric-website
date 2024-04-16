@@ -1,6 +1,6 @@
 {
   "name": "eric-website",
-  "homepage": "https://eric.donger.ca",
+  "homepage": "eric.donger.ca",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
