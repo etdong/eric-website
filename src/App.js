@@ -10,7 +10,7 @@ function App() {
         sequence={[
           ' ',
           3000,
-          "Hello, nice to meet you. wadsad"
+          "Hello, nice to meet you."
         ]}
           wrapper="span"
           cursor={true}
