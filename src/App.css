@@ -80,6 +80,7 @@ img {
 #page2 {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
 
 	background-color: #f5f5db;
 	height: calc(100rem + 20vh);
@@ -108,7 +109,8 @@ img {
 }
 
 #page2_infobody{
-	
+	height: calc(40vh - 30vw);
+	min-height: 15vh;
 }
 
 .printing_container {
@@ -125,7 +127,8 @@ img {
 	top: 5%;
 	margin: auto;
 	overflow: hidden;
-	
+	background-color: black;
+
 	outline-style: double;
 	outline-color: black;
 	outline-width: 2px;
@@ -134,6 +137,21 @@ img {
 #headshot {
 	position: absolute;
 	bottom: 0px;
+	opacity: 0;
+	animation-duration: 2s;
+	animation-name: fadein;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+
+#headshot:after {
+	opacity: 1;
+}
+
+@keyframes fadein {
+	0% {opacity: 0;}
+
+	100% {opacity: 1;}
 }
 
 #printer_top {
@@ -185,7 +203,7 @@ img {
 	height: max(17em, 40vh);
 	background-color: white;   
 	position: relative;
-	animation-duration: 5s;
+	animation-duration: 4s;
 	animation-direction: forwards;
 	animation-timing-function: ease-out;
 	box-shadow: 0px 0px 30px 3px;
@@ -193,26 +211,26 @@ img {
 
 @keyframes printing {
 	0% {
-		bottom: 100%;
+		bottom: 140%;
 	}   
 	9% {
 		bottom: 100%;
 	}
-	10%{
+	11%{
 		bottom: 90%;
 	}   
 
 	20% {
 		bottom: 89%;
 	}
-	21%{
+	22%{
 		bottom: 80%;
 	} 
 	
 	40% {
 		bottom: 78%;
 	}
-	41%{
+	42%{
 		bottom: 70%;
 	}
 
@@ -236,31 +254,70 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	height: calc(100rem + 20vh);
+	height: calc(100rem + 30vh);
+}
+
+.timeline_entry {
+	display: flex;
+	flex-direction: row;
+}
+
+.timeline_container {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+}
+
+.timeline_bar {
+	display: flex;
+	margin-right: 3vw;
+	height: 200px;
+	width: 0.5vw;
+	background-color: white;
+	position: relative;
+	align-items: center;
+	flex-direction: column;
+}
+
+.timeline_date {
+	font-size: calc(1rem + 1.5vmax);
+	width: 15vw;
+	color: white;
+}
+
+.timeline_dot {
+	position: absolute;
+	background-color: #553825;
+	border-radius: 50%;
+	border-style: solid;
+	outline: white solid 10px;
+	margin: 5px;
+	width: 2vmax;
+	height: 2vmax;
 }
 
 #page3_header{
 	font-size: calc(1.6rem + 1.5vmax);
+	margin-bottom: 10vmin;
 }
 
 .page3_section {
-	width: min(45rem, 75vw);
+	width: 75vw;
 	height: fit-content;
 }
 
 .page3_header2 {
-	margin-top: 30%;
+	width: fit-content;
 	font-size: calc(1.4rem + 1vmax);
 }
 
 .page3_subheader{
-	margin-bottom: 10%;
 	font-size: calc(1rem + 1vmax);
 }
 
 .page3_body {
 	font-size: calc(0.6rem + 1vmax);
-
+	margin-bottom: 10%;
 }
 
 

@@ -138,7 +138,6 @@ function App() {
 			</div>) : 
 			(<div className='printing_animation'>
 				<div className='selfie_container'>
-					<img alt='' src='https://i.imgur.com/3WpJtbm.jpeg'></img>
 				</div>      
 			</div>)
 		)
@@ -148,66 +147,118 @@ function App() {
 		if (condition) {
 			return (
 				<div>
-					{typingFunc("My experience:", 100)}
+					{typingFunc("My experience so far:", 100)}
 				</div>
 			)
 		}
+	}
+
+	const timelineSection = (condition) => {
+		if (condition) {
+			return(
+				<div className='timeline_container'>
+					<div className='timeline_date'>
+						{typingFuncNoCursor("Jan - Aug")}
+					</div>
+					<div className='timeline_bar'>
+						<div className='timeline_dot'></div>
+					</div>
+				</div>
+			)
+		}
+		return(
+			<div className='timeline_container'>
+				<div className='timeline_date'>
+				</div>
+				<div className='timeline_bar'>
+					<div className='timeline_dot'></div>
+				</div>
+			</div>
+		)
 	}
 
 	const experience1 = (condition) => {
 		if (condition) {
 			return (
-				<div>
+				<div className='timeline_entry'>
+					{timelineSection(condition)}
 					<div className='page3_header2'>
 						{typingFuncNoCursor("Software Engineer", 100)}
+						<div className='page3_subheader'>
+							Lumentum | Ottawa ON, Canada | Jan - Aug 2024
+						</div>
 					</div>
-					<div className='page3_subheader'>
-						Lumentum
-					</div>
-					<div className='page3_body'>
-						{typingFuncNoCursor("description", 500, 90)}
-					</div>
-				</div>
+				</div>	
 			)
 		}
+		return (
+			<div className='timeline_entry'>
+				{timelineSection(condition)}
+				<div className='page3_header2'>
+					<div className='page3_subheader'>
+					</div>
+				</div>
+			</div>	
+		)
+
 	}
 
 	const experience2 = (condition) => {
 		if (condition) {
 			return (
-				<div>
-					<div className='page3_header2'>
-						{typingFuncNoCursor("Software Developer", 100)}
-					</div>
-					<div className='page3_body'>
-						{typingFuncNoCursor("description", 500, 90)}
+			<div className='timeline_entry'>
+				{timelineSection(condition)}
+				<div className='page3_header2'>
+					{typingFuncNoCursor("", 100)}
+					<div className='page3_subheader'>
+						Lumentum | Ottawa ON, Canada | Jan - Aug 2024
 					</div>
 				</div>
+			</div>
 			)
 		}
+		return (
+			<div className='timeline_entry'>
+				{timelineSection(condition)}
+				<div className='page3_header2'>
+					<div className='page3_subheader'>
+					</div>
+				</div>
+			</div>	
+		)
 	}
 
 	const skills = (condition) => {
 		if (condition) {
 			return (
-			<div>
+			<div className='timeline_entry'>
+				{timelineSection(condition)}
 				<div className='page3_header2'>
-					{typingFuncNoCursor("Relevant Skills", 100)}
-				</div>
-				<div className='page3_body'>
-					{typingFuncNoCursor("description", 500, 90)}
+					{typingFuncNoCursor("Software Engineer", 100)}
+					<div className='page3_subheader'>
+						Lumentum | Ottawa ON, Canada | Jan - Aug 2024
+					</div>
 				</div>
 			</div>
 			)
 		}
+		return (
+			<div className='timeline_entry'>
+				{timelineSection(condition)}
+				<div className='page3_header2'>
+					<div className='page3_subheader'>
+					</div>
+				</div>
+			</div>	
+		)
 	}
 	// observer refs
 	const { ref: introductionRef, inView: page2InView } = useInView({triggerOnce: true})
 	const { ref: selfieRef, inView: selfieInView } = useInView()
-	const { ref: experience1Ref, inView: experience1InView } = useInView({triggerOnce: true})
-	const { ref: page3headerRef, inView: page3headerInView } = useInView({triggerOnce: true})
-	const { ref: experience2Ref, inView: experience2InView } = useInView({triggerOnce: true})
-	const { ref: skillsRef, inView: skillsInView } = useInView({triggerOnce: true})
+	const { ref: experience1Ref, inView: experience1InView } = useInView()
+	const { ref: page3headerRef, inView: page3headerInView } = useInView()
+	const { ref: experience2Ref, inView: experience2InView } = useInView()
+	const { ref: skillsRef, inView: skillsInView } = useInView()
 
 	// app
 	return (
