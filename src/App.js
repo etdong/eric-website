@@ -63,6 +63,7 @@ function App() {
 		return (<div href="#page2" className='down-arrow'></div>)
 	}
 
+
 	// page 2
 
 	const introduction = (condition) => {
@@ -143,6 +144,9 @@ function App() {
 		)
 	}
 
+
+	// page 3
+
 	const aboutMe_header = (condition) => {
 		if (condition) {
 			return (
@@ -153,12 +157,12 @@ function App() {
 		}
 	}
 
-	const timelineSection = (condition) => {
+	const timelineSection = (condition, date) => {
 		if (condition) {
 			return(
 				<div className='timeline_container'>
 					<div className='timeline_date'>
-						{typingFuncNoCursor("Jan - Aug")}
+						{typingFuncNoCursor(date)}
 					</div>
 					<div className='timeline_bar'>
 						<div className='timeline_dot'></div>
@@ -177,15 +181,17 @@ function App() {
 		)
 	}
 
-	const experience1 = (condition) => {
+	const timeline1 = (condition) => {
 		if (condition) {
 			return (
 				<div className='timeline_entry'>
-					{timelineSection(condition)}
+					{timelineSection(condition, "Jan - Aug")}
 					<div className='page3_header2'>
 						{typingFuncNoCursor("Software Engineer", 100)}
 						<div className='page3_subheader'>
-							Lumentum | Ottawa ON, Canada | Jan - Aug 2024
+							{typingFuncNoCursor("Lumentum", 100)}
+							<br></br>
+							{typingFuncNoCursor("Ottawa ON, Canada", 200)}
 						</div>
 					</div>
 				</div>	
@@ -194,24 +200,19 @@ function App() {
 		return (
 			<div className='timeline_entry'>
 				{timelineSection(condition)}
-				<div className='page3_header2'>
-					<div className='page3_subheader'>
-					</div>
-				</div>
 			</div>	
 		)
 
 	}
 
-	const experience2 = (condition) => {
+	const timeline2 = (condition) => {
 		if (condition) {
 			return (
 			<div className='timeline_entry'>
-				{timelineSection(condition)}
+				{timelineSection(condition, "2024")}
 				<div className='page3_header2'>
 					{typingFuncNoCursor("", 100)}
 					<div className='page3_subheader'>
-						Lumentum | Ottawa ON, Canada | Jan - Aug 2024
 					</div>
 				</div>
 			</div>
@@ -220,23 +221,21 @@ function App() {
 		return (
 			<div className='timeline_entry'>
 				{timelineSection(condition)}
-				<div className='page3_header2'>
-					<div className='page3_subheader'>
-					</div>
-				</div>
 			</div>	
 		)
 	}
 
-	const skills = (condition) => {
+	const timeline3 = (condition) => {
 		if (condition) {
 			return (
 			<div className='timeline_entry'>
-				{timelineSection(condition)}
+				{timelineSection(condition, "Sep - Dec")}
 				<div className='page3_header2'>
-					{typingFuncNoCursor("Software Engineer", 100)}
+					{typingFuncNoCursor("Software Team Member - Drive Systems", 100)}
 					<div className='page3_subheader'>
-						Lumentum | Ottawa ON, Canada | Jan - Aug 2024
+							{typingFuncNoCursor("Space Exploration Alberta Robotics", 100)}
+							<br></br>
+							{typingFuncNoCursor("Edmonton AB, Canada", 200)}
 					</div>
 				</div>
 			</div>
@@ -245,20 +244,45 @@ function App() {
 		return (
 			<div className='timeline_entry'>
 				{timelineSection(condition)}
-				<div className='page3_header2'>
-					<div className='page3_subheader'>
-					</div>
-				</div>
 			</div>	
 		)
 	}
+
+	const timeline4 = (condition) => {
+		if (condition) {
+			return (
+			<div className='timeline_entry'>
+				{timelineSection(condition, "test - test")}
+				<div className='page3_header2'>
+					{typingFuncNoCursor("test4", 100)}
+					<div className='page3_subheader'>
+							{typingFuncNoCursor("test44", 100)}
+							<br></br>
+							{typingFuncNoCursor("test444", 200)}
+					</div>
+				</div>
+			</div>
+			)
+		}
+		return (
+			<div className='timeline_entry'>
+				{timelineSection(condition)}
+			</div>	
+		)
+	}
+
 	// observer refs
 	const { ref: introductionRef, inView: page2InView } = useInView({triggerOnce: true})
 	const { ref: selfieRef, inView: selfieInView } = useInView()
-	const { ref: experience1Ref, inView: experience1InView } = useInView()
 	const { ref: page3headerRef, inView: page3headerInView } = useInView()
-	const { ref: experience2Ref, inView: experience2InView } = useInView()
-	const { ref: skillsRef, inView: skillsInView } = useInView()
+
+	const { ref: timeline1Ref, inView: timeline1InView } = useInView()
+	const { ref: timeline2Ref, inView: timeline2InView } = useInView()
+	const { ref: timeline3Ref, inView: timeline3InView } = useInView()
+	const { ref: timeline4Ref, inView: timeline4InView } = useInView()
+	const { ref: timeline5Ref, inView: timeline5InView } = useInView()
+	const { ref: timeline6Ref, inView: timeline6InView } = useInView()
+
 
 	// app
 	return (
@@ -326,19 +350,30 @@ function App() {
 					{aboutMe_header(page3headerInView)}
 				</div>
 
-				<div ref={experience1Ref} className='page3_section'>
-					{experience1(experience1InView)}
-				</div>
+				<div>
+					<div ref={timeline1Ref} className='page3_section'>
+						{timeline1(timeline1InView)}
+					</div>
+					
+					<div ref={timeline2Ref} className='page3_section'>
+						{timeline2(timeline2InView)}
+					</div>
 
+					<div ref={timeline3Ref} className='page3_section'>
+						{timeline3(timeline3InView)}
+					</div>
+
+					<div ref={timeline4Ref} className='page3_section'>
+						{timeline4(timeline4InView)}
+					</div>
+
+					<div ref={timeline5Ref} className='page3_section'>
+					</div>
+
+					<div ref={timeline6Ref} className='page3_section'>
+					</div>
+				</div>
 				
-				<div ref={experience2Ref} className='page3_section'>
-					{experience2(experience2InView)}
-				</div>
-
-
-				<div ref={skillsRef} className='page3_section'>
-					{skills(skillsInView)}
-				</div>
 			</div>
 
 		</div>

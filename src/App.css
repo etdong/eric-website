@@ -280,9 +280,11 @@ img {
 }
 
 .timeline_date {
-	font-size: calc(1rem + 1.5vmax);
+	font-size: calc(0.5rem + 1.5vmax);
 	width: 15vw;
 	color: white;
+	text-align: right;
+	margin-right: 50px;
 }
 
 .timeline_dot {
@@ -291,14 +293,16 @@ img {
 	border-radius: 50%;
 	border-style: solid;
 	outline: white solid 10px;
-	margin: 5px;
 	width: 2vmax;
 	height: 2vmax;
 }
 
 #page3_header{
-	font-size: calc(1.6rem + 1.5vmax);
+	font-size: calc(1.2rem + 1.5vmax);
 	margin-bottom: 10vmin;
+	text-align: center;
+	width: min(80%, 90vw);
+	height: calc(40vh - 30vw);
 }
 
 .page3_section {
@@ -308,11 +312,11 @@ img {
 
 .page3_header2 {
 	width: fit-content;
-	font-size: calc(1.4rem + 1vmax);
+	font-size: calc(1rem + 1vmax);
 }
 
 .page3_subheader{
-	font-size: calc(1rem + 1vmax);
+	font-size: calc(0.8rem + 1vmax);
 }
 
 .page3_body {
