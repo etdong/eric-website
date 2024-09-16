@@ -71,9 +71,12 @@ function App() {
 		return (
 			<div>
 				<div id='page2_header_name'>
-					{typingFuncNoCursor("My name is Eric Dong", 0)}
+					<div id='page2_header_name2'>
+						{typingFuncNoCursor("My name is", 0)}	
+					</div>
+					{typingFunc("Eric Dong",700)}
 				</div>
-				<div id='page2_subheader'>
+				<div id='page2_subheader_title'>
 					{typingFuncNoCursor("Undergraduate Software Engineer", 1000)}
 				</div>
 				<div id='page2_subheader'>
@@ -147,7 +150,7 @@ function App() {
 
 	// page 3
 
-	const aboutMe_header = (condition) => {
+	const page3Header = (condition) => {
 		if (condition) {
 			return (
 				<div>
@@ -231,7 +234,7 @@ function App() {
 			<div className='timeline_entry'>
 				{timelineSection(condition, "Sep - Dec")}
 				<div className='page3_header2'>
-					{typingFuncNoCursor("Software Team Member - Drive Systems", 100)}
+					{typingFuncNoCursor("Drive Systems Developer", 100)}
 					<div className='page3_subheader'>
 							{typingFuncNoCursor("Space Exploration Alberta Robotics", 100)}
 							<br></br>
@@ -252,13 +255,9 @@ function App() {
 		if (condition) {
 			return (
 			<div className='timeline_entry'>
-				{timelineSection(condition, "test - test")}
+				{timelineSection(condition, "2023")}
 				<div className='page3_header2'>
-					{typingFuncNoCursor("test4", 100)}
 					<div className='page3_subheader'>
-							{typingFuncNoCursor("test44", 100)}
-							<br></br>
-							{typingFuncNoCursor("test444", 200)}
 					</div>
 				</div>
 			</div>
@@ -271,18 +270,84 @@ function App() {
 		)
 	}
 
+	const timelineCurrent = (condition) => {
+		if (condition) {
+			return (
+			<div className='timeline_entry'>
+				{timelineSection(condition, "Now")}
+				<div className='page3_header2'>
+					{typingFuncNoCursor("4th Year Software Engineering", 100)}
+					<div className='page3_subheader'>
+							{typingFuncNoCursor("University of Alberta", 100)}
+							<br></br>
+							{typingFuncNoCursor("Edmonton AB, Canada", 200)}
+					</div>
+				</div>
+			</div>
+			)
+		}
+		return (
+			<div className='timeline_entry'>
+				{timelineSection(condition)}
+			</div>	
+		)
+	}
+
+	const timelineFinal = () => {
+		return (
+			<div className='timeline_container'>
+				<div className='timeline_date'>
+				</div>
+				<div className='timeline_bar' style={{minHeight: "100px"}}>
+					<div className='timeline_stopper'>
+					</div>
+				</div>
+			</div>	
+		)
+	}
+
+	// page 4
+
+	const page4Header = (condition) => {
+		if (condition) {
+			return (
+			<div>
+				{typingFunc("Contact info:", 10)}
+			</div>
+			)
+		}
+	}
+
+	const contacts = (condition) => {
+		if (condition) {
+			return (
+				<div>
+					<div className='contacts_sec1'>
+						{typingFuncNoCursor("eric@donger.ca", 100)}  
+					</div>
+					<div className='contacts_sec1'>
+						<a className='link' href='https://www.linkedin.com/in/etdong/' target='_blank' rel='noreferrer'>
+							{typingFuncNoCursor("LinkedIn",200)}	
+						</a>
+					</div>
+				</div>
+			)
+		}
+	}
+
 	// observer refs
 	const { ref: introductionRef, inView: page2InView } = useInView({triggerOnce: true})
 	const { ref: selfieRef, inView: selfieInView } = useInView()
-	const { ref: page3headerRef, inView: page3headerInView } = useInView()
 
+	const { ref: page3headerRef, inView: page3headerInView } = useInView()
+	const { ref: timelineCurrentRef, inView: timelineCurrentInView } = useInView()
 	const { ref: timeline1Ref, inView: timeline1InView } = useInView()
 	const { ref: timeline2Ref, inView: timeline2InView } = useInView()
 	const { ref: timeline3Ref, inView: timeline3InView } = useInView()
 	const { ref: timeline4Ref, inView: timeline4InView } = useInView()
-	const { ref: timeline5Ref, inView: timeline5InView } = useInView()
-	const { ref: timeline6Ref, inView: timeline6InView } = useInView()
 
+	const { ref: page4headerRef, inView: page4headerInView } = useInView()
+	const { ref: contactsRef, inView: contactsInView } = useInView()
 
 	// app
 	return (
@@ -347,10 +412,14 @@ function App() {
 
 			<div id="page3" className='page'>
 				<div ref={page3headerRef} id='page3_header'>
-					{aboutMe_header(page3headerInView)}
+					{page3Header(page3headerInView)}
 				</div>
 
 				<div>
+					<div ref={timelineCurrentRef} className='page3_section'>
+						{timelineCurrent(timelineCurrentInView)}
+					</div>
+
 					<div ref={timeline1Ref} className='page3_section'>
 						{timeline1(timeline1InView)}
 					</div>
@@ -367,15 +436,42 @@ function App() {
 						{timeline4(timeline4InView)}
 					</div>
 
-					<div ref={timeline5Ref} className='page3_section'>
-					</div>
-
-					<div ref={timeline6Ref} className='page3_section'>
+					<div>
+						{timelineFinal()}
 					</div>
 				</div>
-				
+
+				<div>
+				</div>	
 			</div>
 
+			<div className='page divider'>
+				<div className="custom-shape-divider-top-1726513486">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+					<path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" className="shape-fill"></path>
+					</svg>
+				</div>
+			</div>
+
+			<div className='page divider'>
+				<div className="custom-shape-divider-top-1726513587">
+					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+					<path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" className="shape-fill"></path>
+					</svg>
+				</div>
+			</div>
+
+			
+
+			<div id='page4' className='page'>
+				<div ref={page4headerRef} className='page4_header'>
+					{page4Header(page4headerInView)}
+				</div>
+
+				<div ref={contactsRef} className='contacts'>
+					{contacts(contactsInView)}
+				</div>
+			</div>
 		</div>
 		
 	);
