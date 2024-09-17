@@ -60,7 +60,17 @@ function App() {
 
 	// page 1
 	const downarrow = () => {
-		return (<div href="#page2" className='down-arrow'></div>)
+		return (
+			<div className='down-arrow-wrapper'>
+				<div>
+					{typingFuncNoCursor("scroll")}
+				</div>
+				<div className='down-arrow'>
+					↓
+				</div>
+			</div>
+			
+		)
 	}
 
 
@@ -190,11 +200,11 @@ function App() {
 				<div className='timeline_entry'>
 					{timelineSection(condition, "Jan - Aug")}
 					<div className='page3_header2'>
-						{typingFuncNoCursor("Software Engineer", 100)}
+						{typingFuncNoCursor("Software Engineer", 100, 75)}
 						<div className='page3_subheader'>
-							{typingFuncNoCursor("Lumentum", 100)}
+							{typingFuncNoCursor("Lumentum", 100, 75)}
 							<br></br>
-							{typingFuncNoCursor("Ottawa ON, Canada", 200)}
+							{typingFuncNoCursor("Ottawa ON, Canada", 200, 75)}
 						</div>
 					</div>
 				</div>	
@@ -234,11 +244,11 @@ function App() {
 			<div className='timeline_entry'>
 				{timelineSection(condition, "Sep - Dec")}
 				<div className='page3_header2'>
-					{typingFuncNoCursor("Drive Systems Developer", 100)}
+					{typingFuncNoCursor("Drive Systems Developer", 100, 75)}
 					<div className='page3_subheader'>
-							{typingFuncNoCursor("Space Exploration Alberta Robotics", 100)}
+							{typingFuncNoCursor("Space Exploration Alberta Robotics", 100, 75)}
 							<br></br>
-							{typingFuncNoCursor("Edmonton AB, Canada", 200)}
+							{typingFuncNoCursor("Edmonton AB, Canada", 200, 75)}
 					</div>
 				</div>
 			</div>
@@ -276,11 +286,11 @@ function App() {
 			<div className='timeline_entry'>
 				{timelineSection(condition, "Now")}
 				<div className='page3_header2'>
-					{typingFuncNoCursor("4th Year Software Engineering", 100)}
+					{typingFuncNoCursor("4th Year Software Engineering", 100, 75)}
 					<div className='page3_subheader'>
-							{typingFuncNoCursor("University of Alberta", 100)}
+							{typingFuncNoCursor("University of Alberta", 100, 75)}
 							<br></br>
-							{typingFuncNoCursor("Edmonton AB, Canada", 200)}
+							{typingFuncNoCursor("Edmonton AB, Canada", 200, 75)}
 					</div>
 				</div>
 			</div>
@@ -357,9 +367,8 @@ function App() {
 				<div id='greeting'>
 					{typingFunc("Hello, nice to meet you.", 2000)}
 				</div>
-				
-				<div className='down-arrow-wrapper'>
-					{DelayedComponent(downarrow(), 5000)}
+				<div>
+					{DelayedComponent(downarrow(), 6000)}
 				</div>
 			</div>
 
@@ -473,7 +482,7 @@ function App() {
 				</div>
 
 				<div className='version'>
-					v1.31 9.16.24
+					v1.32 9.16.24
 				</div>
 			</div>
 		</div>
