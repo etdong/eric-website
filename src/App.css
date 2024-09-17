@@ -77,7 +77,6 @@ a {
 	transform: rotateZ(45deg);
 	opacity: 50%;
 	border-color: white;
-	transition-duration: 1s;
 }
 
 /* second page */
@@ -95,7 +94,7 @@ a {
 	text-align: left;
 	margin-left: 5vmin;
 	margin-right: 5vmin;
-	margin-top: 15vmin;
+	margin-top: min(40vmin, 50%);
 	margin-bottom: 15vmax;
 	height: fit-content();
 }
@@ -158,9 +157,9 @@ a {
 	position: absolute;
 	bottom: 0px;
 	opacity: 0;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-name: fadein;
-	animation-delay: 3s;
+	animation-delay: 2.5s;
 	animation-fill-mode: forwards;	
 }
 
@@ -328,7 +327,7 @@ a {
 
 #page3_header{
 	font-size: calc(1.2rem + 1.5vmax);
-	margin-bottom: 10	%;
+	margin-bottom: 10%;
 	text-align: center;
 	width: min(80%, 90vw);
 	height: calc(40vh - 30vw);
@@ -527,3 +526,11 @@ a:link {
 		.custom-shape-divider-top-1726513587 .shape-fill {
 				fill: #3e2c1f;
 		}
+
+
+.version {
+	position: absolute;
+	bottom: 10%;
+	color: #4f4f4f;
+	font-size: 20px;
+}

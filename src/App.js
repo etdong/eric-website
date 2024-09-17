@@ -140,9 +140,9 @@ function App() {
 					<img id='headshot' alt='' src='https://i.imgur.com/3WpJtbm.jpeg'></img>
 				</div>
 			</div>) : 
-			(<div className='printing_animation'>
+			(<div className='printing_animation' style={{opacity: "0"}}>
 				<div className='selfie_container'>
-				</div>      
+				</div>
 			</div>)
 		)
 	}
@@ -339,15 +339,15 @@ function App() {
 	const { ref: introductionRef, inView: page2InView } = useInView({triggerOnce: true})
 	const { ref: selfieRef, inView: selfieInView } = useInView()
 
-	const { ref: page3headerRef, inView: page3headerInView } = useInView()
-	const { ref: timelineCurrentRef, inView: timelineCurrentInView } = useInView()
-	const { ref: timeline1Ref, inView: timeline1InView } = useInView()
-	const { ref: timeline2Ref, inView: timeline2InView } = useInView()
-	const { ref: timeline3Ref, inView: timeline3InView } = useInView()
-	const { ref: timeline4Ref, inView: timeline4InView } = useInView()
+	const { ref: page3headerRef, inView: page3headerInView } = useInView({triggerOnce: true})
+	const { ref: timelineCurrentRef, inView: timelineCurrentInView } = useInView({triggerOnce: true})
+	const { ref: timeline1Ref, inView: timeline1InView } = useInView({triggerOnce: true})
+	const { ref: timeline2Ref, inView: timeline2InView } = useInView({triggerOnce: true})
+	const { ref: timeline3Ref, inView: timeline3InView } = useInView({triggerOnce: true})
+	const { ref: timeline4Ref, inView: timeline4InView } = useInView({triggerOnce: true})
 
-	const { ref: page4headerRef, inView: page4headerInView } = useInView()
-	const { ref: contactsRef, inView: contactsInView } = useInView()
+	const { ref: page4headerRef, inView: page4headerInView } = useInView({triggerOnce: true})
+	const { ref: contactsRef, inView: contactsInView } = useInView({triggerOnce: true})
 
 	// app
 	return (
@@ -470,6 +470,10 @@ function App() {
 
 				<div ref={contactsRef} className='contacts'>
 					{contacts(contactsInView)}
+				</div>
+
+				<div className='version'>
+					v1.31 9.16.24
 				</div>
 			</div>
 		</div>
