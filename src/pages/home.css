@@ -22,10 +22,21 @@
 .blur-screen-inner {
     width: 100%;
     display: flex;
-    margin: 10%;
+    margin: 7%;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     text-align: left;
+}
+
+.bubbles {
+    display: flex;
+    position: absolute;
+}
+
+.bubble {
+    border-radius: 50%;
+    opacity: 0.8;
+    scale: calc(0.5 + 0.5 * var(--scale));
 }
 
 .info {
@@ -33,6 +44,11 @@
     flex-direction: column;
     min-width: 30%;
     flex: 1 1 auto;
+}
+
+.left {
+    max-width: 50%;
+    min-width: 24rem;
 }
 
 .name {
@@ -51,17 +67,38 @@
     align-items: flex-end;
 }
 
+/* Right side */
+
 .right {
     font-size: 1.5rem;
+    max-width: 50%;
+    min-width: 24rem;
+    overflow-y: scroll;
 }
 
-.bubbles {
-    display: flex;
-    position: absolute;
+.right::-webkit-scrollbar { 
+    width: 3px;
+    background: rgb(15, 15, 15);
+    border-radius: 4px;
 }
 
-.bubble {
-    border-radius: 50%;
-    opacity: 0.8;
-    scale: calc(0.5 + 0.5 * var(--scale));
+.right::-webkit-scrollbar-thumb {
+    background: #686868;
+    border-radius: 4px;
+
+}
+
+.header {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.subheader {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skills {
+    margin-top: 3rem;
 }

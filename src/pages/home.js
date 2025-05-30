@@ -18,24 +18,37 @@ const contacts = () => {
 }
 
 const bubble = (color, radius) =>{
-        return (
-            <div className="bubble" style={{
-                backgroundColor: color || 'blue',
-                width: radius || '100px',
-                height: radius || '100px',
-                }}>
+    return (
+        <div className="bubble" style={{
+            backgroundColor: color || 'blue',
+            width: radius || '100px',
+            height: radius || '100px',
+            }}>
 
-            </div>
-        )
-    }
+        </div>
+    )
+}
+
+// const handleMouseMove = (event) => {
+//     const y = event.pageY;
+//     const x = event.pageX;
+//     const ref = document.querySelector('.bubble')
+//     ref.style.left =  x + 'px';
+//     ref.style.top = y + 'px';
+// };
+
+
 
 function Home() {
+    // document.addEventListener("mousemove", handleMouseMove)
     return (
         <div className="home">
             <div className='blur-screen'>
                 <div className='blur-screen-inner'>
                     <div className='left info'>
-                        <div className='name'>Eric Dong</div>
+                        <div className='name'>
+                            Eric Dong
+                        </div>
                         <br />
                         <div className='desc'>
                             4th Year Software Engineering
@@ -49,14 +62,55 @@ function Home() {
                     </div>
 
                     <div className='right info'>
-                        
+                        <div className='experience'>
+                            <div className='header'>
+                            Experience
+                            </div>
+                            <div className='subheader'>
+                                May 2025 - Present
+                                <br />
+                                SINOSEAL
+                                <br />
+                                Project Manager
+                            </div>
+                            <div className='subheader'>
+                                Jan 2024 - Aug 2024
+                                <br />
+                                Lumentum
+                                <br />
+                                Software Engineer
+                            </div>
+                            <div className='subheader'>
+                                Sep 2023 - Jan 2024
+                                <br />
+                                Space Exploration Alberta Robotics
+                                <br />
+                                Drive Systems Engineer
+                            </div>
+                        </div>
+                        <div className='skills'>
+                            <div className='header'>
+                                Skills
+                            </div>
+                            <div className='subheader'>
+                                Languages:
+                                <br />
+                                Python, C++, Java, JavaScript, React, Node.js, HTML, CSS
+                            </div>
+                            <div className='subheader'>
+                                Libraries:
+                                <br />
+                                NumPy, Pandas, TensorFlow, PyTorch, Flask, Express.js
+                            </div>
+                        </div>
+                            
                     </div>
                 </div>
             </div>
             <div className='bubbles'>
                 {bubble('red', 200)}
-                {bubble('green')}
-                {bubble('blue')}
+                {bubble('green', 300)}
+                {bubble('blue', 160)}
                 {bubble('yellow')}
                 {bubble('orange')}
             </div>
