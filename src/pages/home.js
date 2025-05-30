@@ -1,3 +1,4 @@
+import BouncingBalls from '../components/BouncingBalls'
 import './home.css'
 
 const contacts = () => {
@@ -17,18 +18,6 @@ const contacts = () => {
     )
 }
 
-const bubble = (color, radius) =>{
-    return (
-        <div className="bubble" style={{
-            backgroundColor: color || 'blue',
-            width: radius || '100px',
-            height: radius || '100px',
-            }}>
-
-        </div>
-    )
-}
-
 // const handleMouseMove = (event) => {
 //     const y = event.pageY;
 //     const x = event.pageX;
@@ -36,8 +25,6 @@ const bubble = (color, radius) =>{
 //     ref.style.left =  x + 'px';
 //     ref.style.top = y + 'px';
 // };
-
-
 
 function Home() {
     // document.addEventListener("mousemove", handleMouseMove)
@@ -107,13 +94,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className='bubbles'>
-                {bubble('red', 200)}
-                {bubble('green', 300)}
-                {bubble('blue', 160)}
-                {bubble('yellow')}
-                {bubble('orange')}
-            </div>
+            <BouncingBalls count={10} />
         </div>
 
     )
