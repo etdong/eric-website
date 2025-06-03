@@ -18,14 +18,6 @@ const contacts = () => {
     )
 }
 
-// const handleMouseMove = (event) => {
-//     const y = event.pageY;
-//     const x = event.pageX;
-//     const ref = document.querySelector('.bubble')
-//     ref.style.left =  x + 'px';
-//     ref.style.top = y + 'px';
-// };
-
 function Home() {
     // document.addEventListener("mousemove", handleMouseMove)
     return (
@@ -56,21 +48,21 @@ function Home() {
                             <div className='subheader'>
                                 May 2025 - Present
                                 <br />
-                                SINOSEAL
+                                <i>SINOSEAL</i>
                                 <br />
                                 Project Manager
                             </div>
                             <div className='subheader'>
                                 Jan 2024 - Aug 2024
                                 <br />
-                                Lumentum
+                                <i>Lumentum</i>
                                 <br />
                                 Software Engineer
                             </div>
                             <div className='subheader'>
                                 Sep 2023 - Jan 2024
                                 <br />
-                                Space Exploration Alberta Robotics
+                                <i>Space Exploration Alberta Robotics</i>
                                 <br />
                                 Drive Systems Engineer
                             </div>
@@ -90,7 +82,6 @@ function Home() {
                                 NumPy, Pandas, TensorFlow, PyTorch, Flask, Express.js
                             </div>
                         </div>
-                            
                     </div>
                 </div>
             </div>
