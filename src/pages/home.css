@@ -177,7 +177,7 @@
     display: flex;
     width: max(80%, 90vmin);
     height: 90%;
-    border-radius: 10%;
+    border-radius: 6%;
     background-color: rgba(37, 37, 37, 0.7);
     backdrop-filter: blur(100px);
     z-index: 1;
