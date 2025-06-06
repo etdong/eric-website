@@ -18,7 +18,7 @@ const contacts = () => {
     )
 }
 
-function Home() {
+function HomeZh() {
 
     window.addEventListener("DOMContentLoaded", (event) => {
         const langSwitch = document.getElementById('langswitch');
@@ -43,18 +43,20 @@ function Home() {
                     <div className='left info'>
                         <div className='name'>
                             Eric Dong
+                            <br />
+                            董天凝
                         </div>
                         <br />
                         <div className='desc'>
-                            4th Year Software Engineering
+                            软件工程本科 四年级
                             <br />
-                            University of Alberta
+                            阿尔伯塔大学
                         </div>
                         <div className='contact_container'>
                             <div className='contact'>
                                 {contacts()}
                                 <div className='language desc'>
-                                    <a href='/zh'><div>中文</div></a>
+                                    <a href='/'><div>EN</div></a>
                                 </div>
                             </div>
                             
@@ -66,33 +68,33 @@ function Home() {
                     <div className='right info'>
                         <div className='category'>
                             <div className='header'>
-                            Experience
+                            工作经验
                             </div>
                             <div className='subheader'>
-                                May 2025 - Present
+                                2025年5月至今
                                 <br />
-                                <i>SINOSEAL</i>
+                                <i>中密控股股份有限公司</i>
                                 <br />
-                                Project Manager Co-op
+                                项目管理员
                             </div>
                             <div className='subheader'>
-                                Jan 2024 - Aug 2024
+                                2024年1月至2024年8月
                                 <br />
                                 <i>Lumentum</i>
                                 <br />
-                                Software Engineer Co-op
+                                软件工程师
                             </div>
                             <div className='subheader'>
-                                Sep 2023 - Jan 2024
+                                2023年9月至2024年1月
                                 <br />
                                 <i>Space Exploration Alberta Robotics</i>
                                 <br />
-                                Drive Systems Engineer
+                                驱动系统工程师
                             </div>
                         </div>
                         <div className='category'>
                             <div className='header'>
-                                Projects
+                                个人项目
                             </div>
                             <div className='subheader'>
                                 <a href='https://github.com/etdong/webhunt' target='_blank' rel='noreferrer'><b>WebHunt</b></a>
@@ -109,7 +111,7 @@ function Home() {
                                 </g>
                                 </svg>
                                 <br />
-                                Web game based off of GamePigeon's Wordhunt
+                                基于 Word Hunt 的网页游戏
                                 <br />
                                 <div className='subscript'><i>React, TypeScript, JavaScript, Express.js, Node.js, socket.io, Passport, MongoDB</i></div>
                             </div>
@@ -128,7 +130,7 @@ function Home() {
                                 </g>
                                 </svg>
                                 <br />
-                                AI song recommendation system for the popular rhythm game osu!
+                                人气节奏游戏 osu! 的AI歌曲推荐系统
                                 <br />
                                 <div className='subscript'>
                                     <i>Tensorflow, Python, MongoDB, React, JavaScript, Express.js, Node.js</i>
@@ -149,14 +151,14 @@ function Home() {
                                 </g>
                                 </svg>
                                 <br />
-                                Kessler Game fuzzy AI controller
+                                小行星游戏 Fuzzy AI控制器
                                 <br />
                                 <div className='subscript'>
                                     <i>Python, SciKit Learn</i>
                                 </div>
                             </div>
                             <div className='subheader'>
-                                <a href='https://github.com/CMPUT301F24throat/throat-events' target='_blank' rel='noreferrer'><b>PickMe App</b></a>
+                                <a href='https://github.com/CMPUT301F24throat/throat-events' target='_blank' rel='noreferrer'><b>PickMe APP</b></a>
                                 <svg fill="#FFFFFF" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162.656 162.656">
                                 <g>
                                     <path d="M151.764,10.894c-14.522-14.522-38.152-14.525-52.676-0.008l0.003,0.003L76.112,33.872l10.607,10.605l22.983-22.988
@@ -170,7 +172,7 @@ function Home() {
                                 </g>
                                 </svg>
                                 <br />
-                                Event scheduling and lottery selection application
+                                赛事安排和抽签选择应用程序
                                 <br />
                                 <div className='subscript'>
                                     <i>Java, Firebase, Espresso, Jest</i>
@@ -179,27 +181,27 @@ function Home() {
                         </div>
                         <div className='category'>
                             <div className='header'>
-                                Skills
+                                技能特长
                             </div>
                             <div className='subheader'>
-                                Languages:
+                                编程语言:
                                 <br />
                                 Python, Java, C/C++, JavaScript, TypeScript, HTML/CSS, C#, VB.NET, SQL, Rust
                             </div>
                             <div className='subheader'>
-                                Libraries/Frameworks:
+                                库/框架:
                                 <br />
                                 React, Node.js, Express.js, TensorFlow, Keras, SciKit Learn, Pandas, NumPy, Matplotlib, JUnit
                             </div>
                             <div className='subheader'>
-                                Dev Tools:
+                                编程工具:
                                 <br />
                                 Git, Docker, AWS, Android Studio, MongoDB, Visual Studio, PyCharm, Google Cloud
                             </div>
                             <div className='subheader'>
-                                Other:
+                                其他工具:
                                 <br />
-                                REST, Atlassian, Data Structures & Algorithms, Relational Databases, Infrastructure as Code, Agile
+                                REST, Agile, 数据结构与算法, 关系数据库
                             </div>
                         </div>
                     </div>
@@ -211,4 +213,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default HomeZh;
