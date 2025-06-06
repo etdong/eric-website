@@ -195,6 +195,10 @@
     z-index: -1;
 }
 
+.balls {
+    width: max(80%, 90vmin);
+}
+
 .blur-screen {
     overflow: hidden;
     display: flex;

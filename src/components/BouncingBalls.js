@@ -77,9 +77,6 @@ const BouncingBalls = ({ count = 5 }) => {
             <canvas
             className='balls'
             ref={canvasRef}
-            style={{
-                width: '70%',
-            }}
             />
         </div>
        
