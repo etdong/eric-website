@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-const COLORS = ['red', 'magenta', 'blue', 'yellow', 'orange', 'purple'];
+const COLORS = ['red', 'magenta', 'yellow', 'orange', 'purple'];
 
 function randomBetween(min, max) {
     return Math.random() * (max - min) + min;
@@ -11,8 +11,8 @@ function createBall(width, height) {
     return {
         x: randomBetween(radius, width - radius),
         y: randomBetween(radius, height - radius),
-        dx: randomBetween(-0.2, 0.2) || 2,
-        dy: randomBetween(-0.2, 0.2) || 2,
+        dx: randomBetween(-0.3, 0.3) || 2,
+        dy: randomBetween(-0.3, 0.3) || 2,
         radius,
         color: COLORS[Math.floor(Math.random() * COLORS.length)],
     };
@@ -74,12 +74,12 @@ const BouncingBalls = ({ count = 5 }) => {
             zIndex: '0',
             pointerEvents: 'none',
         }}>
-             <canvas
+            <canvas
+            className='balls'
             ref={canvasRef}
             style={{
                 width: '70%',
-                height: '90%',
-                }}
+            }}
             />
         </div>
        
