@@ -42,9 +42,7 @@ function HomeZh() {
                 <div className='blur-screen-inner'>
                     <div className='left info'>
                         <div className='name'>
-                            Eric Dong
-                            <br />
-                            董天凝
+                            Eric Dong 董天凝
                         </div>
                         <br />
                         <div className='desc'>
