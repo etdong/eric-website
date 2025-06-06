@@ -1,5 +1,13 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .blur-screen {
+        height: 80%;
+    }
+
+    .balls {
+        height: 80%;
+    }
+
     .right {
         width: 100%;
         max-height: 60%;
@@ -11,15 +19,15 @@
     }
 
     .contact {
-        margin-top: 8%;
+        margin-top: 6%;
     }
 
     .name {
-        font-size: 10vmin;
+        font-size: 8vmin;
     }
 
     .desc {
-        font-size: 6vmin;
+        font-size: 5vmin;
     }
 
     .header {
@@ -27,11 +35,28 @@
     }
 
     .subheader {
-        font-size: 6vmin;
+        font-size: 5vmin;
+    }
+
+    .subscript {
+        font-size: 4vmin;
+    }
+
+    #Capa_1 {
+        height: 3.5vmin;
+        width: 7.5vmin;
     }
 }
 
 @media only screen and (min-width: 600px) {
+    .blur-screen {
+        height: 80%;
+    }
+
+    .balls {
+        height: 80%;
+    }
+
     .right {
         width: 100%;
         max-height: 60%;
@@ -43,15 +68,15 @@
     }
 
     .contact {
-        margin-top: 8%;
+        margin-top: 3%;
     }
 
     .name {
-        font-size: 10vmin;
+        font-size: 8vmin;
     }
 
     .desc {
-        font-size: 6vmin;
+        font-size: 5vmin;
     }
 
     .header {
@@ -59,12 +84,29 @@
     }
 
     .subheader {
-        font-size: 6vmin;
+        font-size: 5vmin;
+    }
+
+    .subscript {
+        font-size: 4vmin;
+    }
+
+    #Capa_1 {
+        height: 3.5vmin;
+        width: 7.5vmin;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .blur-screen {
+        height: 90%;
+    }
+
+    .balls {
+        height: 90%;
+    }
+    
     .right {
         width: 100%;
         max-height: 60%;
@@ -76,7 +118,7 @@
     }
 
     .contact {
-        margin-top: 4%;
+        margin-top: 2%;
     }
 
     .name {
@@ -88,44 +130,20 @@
     }
 
     .header {
-        font-size: 5vmin;
+        font-size: 4vmin;
     }
 
     .subheader {
-        font-size: 4vmin;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .right {
-        width: 100%;
-        max-height: 60%;
-        overflow-y: auto;
+        font-size: 3vmin;
     }
 
-    .left {
-        max-height: fit-content;
+    .subscript {
+        font-size: 2.5vmin;
     }
 
-    .contact {
-        margin-top: 4%;
-    }
-
-    .name {
-        font-size: 6vmin;
-    }
-
-    .desc {
-        font-size: 4vmin;
-    }
-
-    .header {
-        font-size: 5vmin;
-    }
-
-    .subheader {
-        font-size: 4vmin;
+    #Capa_1 {
+        height: 2vmin;
+        width: 4vmin;
     }
 }
 
@@ -141,10 +159,6 @@
         max-height: 100%;
     }
 
-    .contact {
-        margin-top: 4%;
-    }
-
     .name {
         font-size: 6vmin;
     }
@@ -154,11 +168,20 @@
     }
 
     .header {
-        font-size: 5vmin;
+        font-size: 4vmin;
     }
 
     .subheader {
-        font-size: 4vmin;
+        font-size: 3vmin;
+    }
+
+    .subscript {
+        font-size: 2.5vmin;
+    }
+
+    #Capa_1 {
+        height: 16px;
+        width: 32px;
     }
 }
 
@@ -168,7 +191,7 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(19, 19, 19);
     z-index: -1;
 }
 
@@ -176,7 +199,6 @@
     overflow: hidden;
     display: flex;
     width: max(80%, 90vmin);
-    height: 90%;
     border-radius: 6%;
     background-color: rgba(37, 37, 37, 0.7);
     backdrop-filter: blur(100px);
@@ -222,6 +244,7 @@
 
 .desc {
     font-weight: normal;
+    margin-right: 2rem;
 }
 
 .contact {
@@ -250,8 +273,19 @@
 .subheader {
     font-weight: normal;
     margin-top: 2rem;
+    margin-right: 2rem;
 }
 
-.skills {
-    margin-top: 3rem;
+.subscript {
+    margin-top: 1rem;
+    font-weight: normal;
+}
+
+.category {
+    margin-bottom: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
