@@ -54,7 +54,7 @@ function Home() {
                             <div className='contact'>
                                 {contacts()}
                                 <div className='language desc'>
-                                    <a href='/zh'><div>中文</div></a>
+                                    <a href='/#/zh'><div>中文</div></a>
                                 </div>
                             </div>
                             

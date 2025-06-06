@@ -5,12 +5,14 @@ import HomeZh from './pages/home_zh'
 
 function App() {
 	return (
-		<Routes>
-			<Route path='/' element={<Home/>}/>
-			<Route path='/zh' element={<HomeZh/>}/>
+		<Router>
+			<Routes>
+				<Route path='/' element={<Home/>}/>
+				<Route path='/zh' element={<HomeZh/>}/>
 
-			<Route path='/cool' element={<Cool/>}/>
-		</Routes>
+				<Route path='/cool' element={<Cool/>}/>
+			</Routes>
+		</Router>
 	)
 }
 

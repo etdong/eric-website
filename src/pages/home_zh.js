@@ -54,7 +54,7 @@ function HomeZh() {
                             <div className='contact'>
                                 {contacts()}
                                 <div className='language desc'>
-                                    <a href='/'><div>EN</div></a>
+                                    <a href='/#'><div>EN</div></a>
                                 </div>
                             </div>
                             
