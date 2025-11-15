@@ -327,12 +327,16 @@ input:checked + .slider:before {
     align-items: center;
 }
 
+.link {
+    margin-right: 16px;
+    color: inherit;
+}
+
 .language {
     height: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 16px;
     border-bottom: rgb(255, 255, 255) 3px solid;
     margin-bottom: 8px;
 }

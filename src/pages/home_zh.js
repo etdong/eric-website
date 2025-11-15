@@ -70,10 +70,7 @@ function HomeZh() {
                                     <a href='/#'><div>EN</div></a>
                                 </div>
                             </div>
-                            
                         </div>
-
-                        
                     </div>
 
                     <div className='right info'>
