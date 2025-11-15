@@ -82,23 +82,30 @@ function HomeZh() {
                             工作经验
                             </div>
                             <div className='subheader'>
-                                2025年5月至今
+                                <b>四川大学青岛研究院</b>
                                 <br />
-                                <i>中密控股股份有限公司</i>
+                                <i>2025年11月至今</i>
+                                <br />
+                                研究实习生
+                            </div>
+                            <div className='subheader'>
+                                <b>中密控股股份有限公司</b>
+                                <br />
+                                <i>2025年5月至2025年9月</i>
                                 <br />
                                 项目管理员
                             </div>
                             <div className='subheader'>
-                                2024年1月至2024年8月
+                                <b>Lumentum</b>
                                 <br />
-                                <i>Lumentum</i>
+                                <i>2024年1月至2024年8月</i>
                                 <br />
                                 软件工程师
                             </div>
                             <div className='subheader'>
-                                2023年9月至2024年1月
+                                <b>Space Exploration Alberta Robotics</b>
                                 <br />
-                                <i>Space Exploration Alberta Robotics</i>
+                                <i>2023年9月至2024年1月</i>
                                 <br />
                                 驱动系统工程师
                             </div>
