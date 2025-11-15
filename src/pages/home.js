@@ -39,11 +39,8 @@ function Home() {
         langSwitch.addEventListener('change', () => {
             if (langSwitch.checked) {
                 window.location.href = '/zh';
-                console.log("test")
             } else {
                 window.location.href = '/en';
-                console.log("test2")
-
             }
         });
     });
@@ -73,8 +70,6 @@ function Home() {
                             </div>
                             
                         </div>
-
-                        
                     </div>
 
                     <div className='right info'>
@@ -83,23 +78,32 @@ function Home() {
                             Experience
                             </div>
                             <div className='subheader'>
-                                May 2025 - Present
+                                <b>Sichuan University</b>
                                 <br />
-                                <i>SINOSEAL</i>
+                                <b>Qingdao Research Academy</b>
+                                <br />
+                                <i>Nov 2025 - Present</i>
+                                <br />
+                                Research Intern
+                            </div>
+                            <div className='subheader'>
+                                <i><b>SINOSEAL</b></i>
+                                <br />
+                                <i>May 2025 - Sep 2025</i>
                                 <br />
                                 Project Manager Co-op
                             </div>
                             <div className='subheader'>
-                                Jan 2024 - Aug 2024
+                                <i><b>Lumentum</b></i>
                                 <br />
-                                <i>Lumentum</i>
+                                <i>Jan 2024 - Aug 2024</i>
                                 <br />
                                 Software Engineer Co-op
                             </div>
                             <div className='subheader'>
-                                Sep 2023 - Jan 2024
+                                <i><b>Space Exploration Alberta Robotics</b></i>
                                 <br />
-                                <i>Space Exploration Alberta Robotics</i>
+                                <i>Sep 2023 - Jan 2024</i>
                                 <br />
                                 Drive Systems Engineer
                             </div>
