@@ -57,7 +57,9 @@ function Home() {
                         </div>
                         <br />
                         <div className='desc'>
-                            4th Year Software Engineering
+                            Software Engineering
+                            <br />
+                            5th Year Undergraduate
                             <br />
                             University of Alberta
                         </div>
@@ -91,7 +93,7 @@ function Home() {
                                 <br />
                                 <i>May 2025 - Sep 2025</i>
                                 <br />
-                                Project Manager Co-op
+                                Software Project Manager Co-op
                             </div>
                             <div className='subheader'>
                                 <i><b>Lumentum</b></i>

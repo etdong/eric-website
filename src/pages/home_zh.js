@@ -55,11 +55,15 @@ function HomeZh() {
                 <div className='blur-screen-inner'>
                     <div className='left info'>
                         <div className='name'>
-                            Eric Dong 董天凝
+                            Eric Dong
+                            <br />
+                            董天凝
                         </div>
                         <br />
                         <div className='desc'>
-                            软件工程本科 四年级
+                            软件工程本科
+                            <br />
+                            四年级
                             <br />
                             阿尔伯塔大学
                         </div>
@@ -90,7 +94,7 @@ function HomeZh() {
                                 <br />
                                 <i>2025年5月至2025年9月</i>
                                 <br />
-                                项目管理员
+                                软件项目管理员
                             </div>
                             <div className='subheader'>
                                 <b>Lumentum</b>
