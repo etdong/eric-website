@@ -63,7 +63,7 @@ function HomeZh() {
                         <div className='desc'>
                             软件工程本科
                             <br />
-                            四年级
+                            五年级
                             <br />
                             阿尔伯塔大学
                         </div>
