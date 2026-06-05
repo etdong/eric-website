@@ -85,7 +85,7 @@ function HomeZh() {
                             <div className='subheader'>
                                 <b>四川大学青岛研究院</b>
                                 <br />
-                                <i>2025年11月至今</i>
+                                <i>2025年9月至2025年12月</i>
                                 <br />
                                 研究实习生
                             </div>

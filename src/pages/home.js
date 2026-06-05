@@ -84,7 +84,7 @@ function Home() {
                                 <br />
                                 <b>Qingdao Research Academy</b>
                                 <br />
-                                <i>Nov 2025 - Present</i>
+                                <i>Sep 2025 - Dec 2025</i>
                                 <br />
                                 Research Intern
                             </div>
