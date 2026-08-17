@@ -27,7 +27,11 @@
     }
 
     .desc {
-        font-size: 5vmin;
+        font-size: 4vmin;
+    }
+
+    .desc2 {
+        font-size: 3vmin;
     }
 
     .header {

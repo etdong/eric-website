@@ -57,11 +57,11 @@ function Home() {
                         </div>
                         <br />
                         <div className='desc'>
-                            Software Engineering
+                            M.Sc. Computer Science
                             <br />
-                            5th Year Undergraduate
+                            Peking University
                             <br />
-                            University of Alberta
+                            Expected July 2029
                         </div>
                         <div className='contact_container'>
                             <div className='contact'>
@@ -77,6 +77,20 @@ function Home() {
                     <div className='right info'>
                         <div className='category'>
                             <div className='header'>
+                                Education
+                            </div>
+                            <div className='subheader'>
+                                <b>University of Alberta</b>
+                                <br />
+                                <i>Sep 2021 - May 2026</i>
+                                <br />
+                                B.Sc. Software Engineering
+                                <br />
+                                Edmonton, Alberta, Canada
+                            </div>
+                        </div>
+                        <div className='category'>
+                            <div className='header'>
                             Experience
                             </div>
                             <div className='subheader'>
@@ -87,6 +101,8 @@ function Home() {
                                 <i>Sep 2025 - Dec 2025</i>
                                 <br />
                                 Research Intern
+                                <br />
+                                Qingdao, Shandong, China
                             </div>
                             <div className='subheader'>
                                 <i><b>SINOSEAL</b></i>
@@ -94,6 +110,8 @@ function Home() {
                                 <i>May 2025 - Sep 2025</i>
                                 <br />
                                 Software Project Manager Co-op
+                                <br />
+                                Chengdu, Sichuan, China
                             </div>
                             <div className='subheader'>
                                 <i><b>Lumentum</b></i>
@@ -101,6 +119,8 @@ function Home() {
                                 <i>Jan 2024 - Aug 2024</i>
                                 <br />
                                 Software Engineer Co-op
+                                <br />
+                                Ottawa, Ontario, Canada
                             </div>
                             <div className='subheader'>
                                 <i><b>Space Exploration Alberta Robotics</b></i>
@@ -108,6 +128,8 @@ function Home() {
                                 <i>Sep 2023 - Jan 2024</i>
                                 <br />
                                 Drive Systems Engineer
+                                <br />
+                                Edmonton, Alberta, Canada
                             </div>
                         </div>
                         <div className='category'>
