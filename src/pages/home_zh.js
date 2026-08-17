@@ -61,11 +61,11 @@ function HomeZh() {
                         </div>
                         <br />
                         <div className='desc'>
-                            软件工程本科
+                            计算机科学硕士
                             <br />
-                            五年级
+                            北京大学
                             <br />
-                            阿尔伯塔大学
+                            将于2029年7月
                         </div>
                         <div className='contact_container'>
                             <div className='contact'>
@@ -80,6 +80,20 @@ function HomeZh() {
                     <div className='right info'>
                         <div className='category'>
                             <div className='header'>
+                                教育背景
+                            </div>
+                            <div className='subheader'>
+                                <b>阿尔伯塔大学</b>
+                                <br />
+                                <i>2021年9月至2026年5月</i>
+                                <br />
+                                软件工程理学学士
+                                <br />
+                                加拿大阿尔伯塔省埃德蒙顿
+                            </div>
+                        </div>
+                        <div className='category'>
+                            <div className='header'>
                             工作经验
                             </div>
                             <div className='subheader'>
@@ -88,6 +102,8 @@ function HomeZh() {
                                 <i>2025年9月至2025年12月</i>
                                 <br />
                                 研究实习生
+                                <br />
+                                中国山东省青岛市
                             </div>
                             <div className='subheader'>
                                 <b>中密控股股份有限公司</b>
@@ -95,6 +111,8 @@ function HomeZh() {
                                 <i>2025年5月至2025年9月</i>
                                 <br />
                                 软件项目管理员
+                                <br />
+                                中国四川省成都市
                             </div>
                             <div className='subheader'>
                                 <b>Lumentum</b>
@@ -102,6 +120,8 @@ function HomeZh() {
                                 <i>2024年1月至2024年8月</i>
                                 <br />
                                 软件工程师
+                                <br />
+                                加拿大安大略省渥太华
                             </div>
                             <div className='subheader'>
                                 <b>Space Exploration Alberta Robotics</b>
@@ -109,6 +129,8 @@ function HomeZh() {
                                 <i>2023年9月至2024年1月</i>
                                 <br />
                                 驱动系统工程师
+                                <br />
+                                加拿大阿尔伯塔省埃德蒙顿
                             </div>
                         </div>
                         <div className='category'>
