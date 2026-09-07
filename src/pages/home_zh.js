@@ -59,6 +59,9 @@ function HomeZh() {
                             <br />
                             董天凝
                         </div>
+                        <div className='desc2'>
+                            etdong26 at pku.edu.cn
+                        </div>
                         <br />
                         <div className='desc'>
                             计算机科学硕士

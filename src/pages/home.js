@@ -55,6 +55,9 @@ function Home() {
                         <div className='name'>
                             Eric Dong
                         </div>
+                        <div className='desc2'>
+                            eric at donger dot ca
+                        </div>
                         <br />
                         <div className='desc'>
                             M.Sc. Computer Science
