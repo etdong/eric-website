@@ -1,4 +1,5 @@
 import BouncingBalls from '../components/BouncingBalls'
+import { Link } from 'react-router-dom'
 import './home.css'
 
 const contacts = () => {
@@ -32,23 +33,6 @@ const contacts = () => {
 }
 
 function HomeZh() {
-
-    window.addEventListener("DOMContentLoaded", (event) => {
-        const langSwitch = document.getElementById('langswitch');
-        langSwitch.addEventListener('change', () => {
-            if (langSwitch.checked) {
-                window.location.href = '/zh';
-                console.log("test")
-            } else {
-                window.location.href = '/en';
-                console.log("test2")
-
-            }
-        });
-    });
-
-    
-
     return (
         <div className="home">
             <div className='blur-screen'>
@@ -74,7 +58,7 @@ function HomeZh() {
                             <div className='contact'>
                                 {contacts()}
                                 <div className='language desc'>
-                                    <a href='/#'><div>EN</div></a>
+                                    <Link to='/'><div>EN</div></Link>
                                 </div>
                             </div>
                         </div>

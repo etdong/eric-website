@@ -26,13 +26,20 @@ const BouncingBalls = ({ count = 5 }) => {
     useEffect(() => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
-        const width = canvas.width;
-        const height = canvas.height;
+        const resizeCanvas = () => {
+            const width = canvas.clientWidth;
+            const height = canvas.clientHeight;
+            canvas.width = width;
+            canvas.height = height;
+            ballsRef.current = Array.from({ length: count }, () => createBall(width, height));
+        };
 
-        // Initialize balls
-        ballsRef.current = Array.from({ length: count }, () => createBall(width, height));
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
 
         function animate() {
+            const width = canvas.width;
+            const height = canvas.height;
             ctx.clearRect(0, 0, width, height);
             ballsRef.current.forEach(ball => {
                 // Move ball
@@ -60,7 +67,10 @@ const BouncingBalls = ({ count = 5 }) => {
         animate();
 
         // Cleanup on unmount
-        return () => cancelAnimationFrame(animationRef.current);
+        return () => {
+            window.removeEventListener('resize', resizeCanvas);
+            cancelAnimationFrame(animationRef.current);
+        };
     }, [count]);
 
     return (

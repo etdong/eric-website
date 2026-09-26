@@ -10,9 +10,10 @@
   },
   "scripts": {
     "start": "vite",
-    "predeploy": "npm run build",
+    "predeploy": "npm run check",
     "deploy": "gh-pages -d build",
     "build": "vite build --outDir build",
+    "check": "npm run build",
     "test": "echo \"No tests configured\" && exit 0"
   },
   "eslintConfig": {
