@@ -1,4 +1,5 @@
 import BouncingBalls from '../components/BouncingBalls'
+import { Link } from 'react-router-dom'
 import './home.css'
 
 const contacts = () => {
@@ -27,28 +28,12 @@ const contacts = () => {
             </g>
             </svg>
             </a>
+                    
         </>
     )
 }
 
-function HomeZh() {
-
-    window.addEventListener("DOMContentLoaded", (event) => {
-        const langSwitch = document.getElementById('langswitch');
-        langSwitch.addEventListener('change', () => {
-            if (langSwitch.checked) {
-                window.location.href = '/zh';
-                console.log("test")
-            } else {
-                window.location.href = '/en';
-                console.log("test2")
-
-            }
-        });
-    });
-
-    
-
+function Home() {
     return (
         <div className="home">
             <div className='blur-screen'>
@@ -56,89 +41,90 @@ function HomeZh() {
                     <div className='left info'>
                         <div className='name'>
                             Eric Dong
-                            <br />
-                            董天凝
                         </div>
                         <div className='desc2'>
-                            etdong26 at pku.edu.cn
+                            eric at donger dot ca
                         </div>
                         <br />
                         <div className='desc'>
-                            计算机科学硕士
+                            M.Sc. Computer Science
                             <br />
-                            北京大学
+                            Peking University
                             <br />
-                            将于2029年7月
+                            Expected July 2029
                         </div>
                         <div className='contact_container'>
                             <div className='contact'>
                                 {contacts()}
                                 <div className='language desc'>
-                                    <a href='/#'><div>EN</div></a>
+                                    <Link to='/zh'><div>中文</div></Link>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
 
                     <div className='right info'>
                         <div className='category'>
                             <div className='header'>
-                                教育背景
+                                Education
                             </div>
                             <div className='subheader'>
-                                <b>阿尔伯塔大学</b>
+                                <b>University of Alberta</b>
                                 <br />
-                                <i>2021年9月至2026年5月</i>
+                                <i>Sep 2021 - May 2026</i>
                                 <br />
-                                软件工程理学学士
+                                B.Sc. Software Engineering
                                 <br />
-                                加拿大阿尔伯塔省埃德蒙顿
+                                Edmonton, Alberta, Canada
                             </div>
                         </div>
                         <div className='category'>
                             <div className='header'>
-                            工作经验
+                            Experience
                             </div>
                             <div className='subheader'>
-                                <b>四川大学青岛研究院</b>
+                                <b>Sichuan University</b>
                                 <br />
-                                <i>2025年9月至2025年12月</i>
+                                <b>Qingdao Research Academy</b>
                                 <br />
-                                研究实习生
+                                <i>Sep 2025 - Dec 2025</i>
                                 <br />
-                                中国山东省青岛市
+                                Research Intern
+                                <br />
+                                Qingdao, Shandong, China
                             </div>
                             <div className='subheader'>
-                                <b>中密控股股份有限公司</b>
+                                <i><b>SINOSEAL</b></i>
                                 <br />
-                                <i>2025年5月至2025年9月</i>
+                                <i>May 2025 - Sep 2025</i>
                                 <br />
-                                软件项目管理员
+                                Software Project Manager Co-op
                                 <br />
-                                中国四川省成都市
+                                Chengdu, Sichuan, China
                             </div>
                             <div className='subheader'>
-                                <b>Lumentum</b>
+                                <i><b>Lumentum</b></i>
                                 <br />
-                                <i>2024年1月至2024年8月</i>
+                                <i>Jan 2024 - Aug 2024</i>
                                 <br />
-                                软件工程师
+                                Software Engineer Co-op
                                 <br />
-                                加拿大安大略省渥太华
+                                Ottawa, Ontario, Canada
                             </div>
                             <div className='subheader'>
-                                <b>Space Exploration Alberta Robotics</b>
+                                <i><b>Space Exploration Alberta Robotics</b></i>
                                 <br />
-                                <i>2023年9月至2024年1月</i>
+                                <i>Sep 2023 - Jan 2024</i>
                                 <br />
-                                驱动系统工程师
+                                Drive Systems Engineer
                                 <br />
-                                加拿大阿尔伯塔省埃德蒙顿
+                                Edmonton, Alberta, Canada
                             </div>
                         </div>
                         <div className='category'>
                             <div className='header'>
-                                个人项目
+                                Projects
                             </div>
                             <div className='subheader'>
                                 <a href='https://github.com/etdong/webhunt' target='_blank' rel='noreferrer'><b>WebHunt</b></a>
@@ -155,7 +141,7 @@ function HomeZh() {
                                 </g>
                                 </svg>
                                 <br />
-                                基于 Word Hunt 的网页游戏
+                                Web game based off of GamePigeon's Wordhunt
                                 <br />
                                 <div className='subscript'><i>React, TypeScript, JavaScript, Express.js, Node.js, socket.io, Passport, MongoDB</i></div>
                             </div>
@@ -174,7 +160,7 @@ function HomeZh() {
                                 </g>
                                 </svg>
                                 <br />
-                                人气节奏游戏 osu! 的AI歌曲推荐系统
+                                AI song recommendation system for the popular rhythm game osu!
                                 <br />
                                 <div className='subscript'>
                                     <i>Tensorflow, Python, MongoDB, React, JavaScript, Express.js, Node.js</i>
@@ -195,14 +181,14 @@ function HomeZh() {
                                 </g>
                                 </svg>
                                 <br />
-                                小行星游戏 Fuzzy AI控制器
+                                Kessler Game fuzzy AI controller
                                 <br />
                                 <div className='subscript'>
                                     <i>Python, SciKit Learn</i>
                                 </div>
                             </div>
                             <div className='subheader'>
-                                <a href='https://github.com/CMPUT301F24throat/throat-events' target='_blank' rel='noreferrer'><b>PickMe APP</b></a>
+                                <a href='https://github.com/CMPUT301F24throat/throat-events' target='_blank' rel='noreferrer'><b>PickMe App</b></a>
                                 <svg fill="#FFFFFF" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162.656 162.656">
                                 <g>
                                     <path d="M151.764,10.894c-14.522-14.522-38.152-14.525-52.676-0.008l0.003,0.003L76.112,33.872l10.607,10.605l22.983-22.988
@@ -216,7 +202,7 @@ function HomeZh() {
                                 </g>
                                 </svg>
                                 <br />
-                                赛事安排和抽签选择应用程序
+                                Event scheduling and lottery selection application
                                 <br />
                                 <div className='subscript'>
                                     <i>Java, Firebase, Espresso, Jest</i>
@@ -225,27 +211,27 @@ function HomeZh() {
                         </div>
                         <div className='category'>
                             <div className='header'>
-                                技能特长
+                                Skills
                             </div>
                             <div className='subheader'>
-                                编程语言:
+                                Languages:
                                 <br />
                                 Python, Java, C/C++, JavaScript, TypeScript, HTML/CSS, C#, VB.NET, SQL, Rust
                             </div>
                             <div className='subheader'>
-                                库/框架:
+                                Libraries/Frameworks:
                                 <br />
                                 React, Node.js, Express.js, TensorFlow, Keras, SciKit Learn, Pandas, NumPy, Matplotlib, JUnit
                             </div>
                             <div className='subheader'>
-                                编程工具:
+                                Dev Tools:
                                 <br />
                                 Git, Docker, AWS, Android Studio, MongoDB, Visual Studio, PyCharm, Google Cloud
                             </div>
                             <div className='subheader'>
-                                其他工具:
+                                Other:
                                 <br />
-                                REST, Agile, 数据结构与算法, 关系数据库
+                                REST, Atlassian, Data Structures & Algorithms, Relational Databases, Infrastructure as Code, Agile
                             </div>
                         </div>
                     </div>
@@ -257,4 +243,4 @@ function HomeZh() {
     )
 }
 
-export default HomeZh;
+export default Home;
